@@ -81,7 +81,7 @@ export default function HeroSection() {
           transition={{ duration: 2, ease: 'easeInOut' }}
         >
           <Image
-            src="/bj1.jpg" // Replace with your image path
+            src="/bj1.jpg" 
             alt="Floating Decor"
             layout="responsive"
             width={128}
@@ -97,7 +97,7 @@ export default function HeroSection() {
           transition={{ duration: 2, delay: 0.5, ease: 'easeInOut' }}
         >
           <Image
-            src="/bj.jpg" // Replace with your image path
+            src="/bj.jpg" 
             alt="Floating Decor"
             layout="responsive"
             width={128}

@@ -12,12 +12,12 @@ const projects = [
   },
   {
     title: "Landing Page For Nexa",
-    description: "A Next-based landing page for Nexa Services which is a digital marketting platform.",
+    description: "A Next-based landing page for Nexa Services which is a digital marketing platform.",
     image: "/nexa.png",
   },
   {
     title: "Calculator",
-    description: "A Real time calculator made using Next.js which is based on the theme of apple calculator",
+    description: "A real-time calculator made using Next.js, based on the theme of an Apple calculator.",
     image: "/calculator.png",
   },
 ]
@@ -74,7 +74,14 @@ const Projects = () => {
                 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Image src={project.image || "/placeholder.svg"} alt={project.title} className="w-full h-48 object-cover" />
+                <div className="relative w-full h-48">
+                  <Image 
+                    src={project.image || "/placeholder.svg"} 
+                    alt={project.title} 
+                    layout="fill" 
+                    objectFit="cover" 
+                  />
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-blue-300">{project.title}</h3>
                   <p className="text-blue-100">{project.description}</p>
@@ -89,4 +96,3 @@ const Projects = () => {
 }
 
 export default Projects
-

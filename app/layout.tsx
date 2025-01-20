@@ -5,7 +5,7 @@ import Header from '../components/Header'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Animated Portfolio',
+  title: 'Bijay_Portfolio',
   description: 'A fully animated portfolio website built with Next.js and Framer Motion',
 }
 
