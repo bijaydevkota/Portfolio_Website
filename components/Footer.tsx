@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Github,  Linkedin, Instagram } from 'lucide-react'
 
+
 const Footer = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -77,7 +78,8 @@ const Footer = () => {
           variants={itemVariants} 
           className="mt-8 text-center"
         >
-          <p>&copy; 2025 Bijay Devkota. All rights reserved.</p>
+          <p>&copy; Designed and Developed by <a href="#">Bijay Devkota</a></p>
+
         </motion.div>
       </div>
     </footer>

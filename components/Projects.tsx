@@ -11,14 +11,14 @@ const projects = [
     description:
       "A full-stack online voting system built with Next.js, Node.js, and MongoDB.",
     image: "/ovs.png",
-    href: "https://github.com/bijaydevkota/Online-Voting-System",
+    href: "https://online-voting-system-sooty.vercel.app/home",
   },
   {
     title: "Website For Nexa Services",
     description:
       "A Next-based landing page for Nexa Services which is a digital marketing platform.",
     image: "/nexa.png",
-    href: "https://github.com/bijaydevkota/Nexa-Services",
+    href: "https://nexaservices.vercel.app/",
   },
   {
     title: "Calculator",

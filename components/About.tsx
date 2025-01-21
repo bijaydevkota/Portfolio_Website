@@ -27,7 +27,7 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-8 text-center text-blue-400">About Me</h2>
           <div className="max-w-3xl mx-auto bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg backdrop-blur-sm">
             <p className="text-lg mb-6">
-              I&apos;m a passionate Full Stack Developer with experience in building responsive and user-friendly web applications. I&apos;ve been constantly learning and improving my skills.
+              I&apos;m a passionate Full Stack Developer with experience in building responsive and user-friendly web applications. Im working as a Full Stack Developer at <a href="https://www.zyluxitsolution.com/" target='_blank' className='underline text-blue-400'>Zylux IT Solution</a>
             </p>
             <p className="text-lg mb-6">
               I specialize in JavaScript, React, Node.js, Express.js and Next.js. I&apos;m also experienced in working with databases like MongoDB and PostgreSQL. My goal is to create efficient, scalable, and maintainable code that provides great user experiences.
