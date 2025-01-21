@@ -35,6 +35,7 @@ export default function HeroSection() {
       </div>
 
       {/* Animated Content */}
+      
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
         <motion.h1
           className="text-6xl font-bold text-center sm:text-7xl lg:text-8xl"
@@ -50,7 +51,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: 'easeInOut' }}
         >
-          Full Stack Developer
+          Full Stack Software Developer
         </motion.p>
 
         <motion.div
@@ -69,13 +70,13 @@ export default function HeroSection() {
             href="#contact"
             className="px-6 py-3 text-lg font-semibold text-black bg-white rounded-lg hover:bg-gray-200"
           >
-            Contact Me
+            Download CV
           </a>
         </motion.div>
 
         {/* Floating Images */}
         <motion.div
-          className="absolute top-10 right-10 w-24 h-24 md:w-32 md:h-32"
+          className="absolute top-10 right-10 w-24 h-24 mt-16 md:w-32 md:h-32 rounded-full overflow-hidden"
           initial={{ scale: 0, rotate: 0 }}
           animate={{ scale: 1, rotate: 360 }}
           transition={{ duration: 2, ease: 'easeInOut' }}
@@ -91,7 +92,7 @@ export default function HeroSection() {
         </motion.div>
 
         <motion.div
-          className="absolute bottom-10 left-10 w-24 h-24 md:w-32 md:h-32"
+          className="absolute bottom-10 left-10 w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden"
           initial={{ scale: 0, rotate: 0 }}
           animate={{ scale: 1, rotate: -360 }}
           transition={{ duration: 2, delay: 0.5, ease: 'easeInOut' }}

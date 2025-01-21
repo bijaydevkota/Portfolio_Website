@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer'
 
 const skills = [
   "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Express", "MongoDB", "PostgreSQL",
-   "REST APIs", "HTML5", "CSS3", "Sass", "Tailwind CSS", "Git", "Github", "SEO"
+   "REST APIs", "HTML5", "CSS3", "Graphic Design", "Tailwind CSS", "Git", "Github", "SEO"
 ]
 
 const Skills = () => {

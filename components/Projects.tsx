@@ -3,15 +3,17 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import Image from 'next/image'
+import { link } from 'fs'
 
 const projects = [
   {
     title: "Online Voting System",
     description: "A full-stack online voting system built with Next.js, Node.js, and MongoDB.",
     image: "/ovs.png",
+  
   },
   {
-    title: "Landing Page For Nexa",
+    title: "Website For Nexa Services",
     description: "A Next-based landing page for Nexa Services which is a digital marketing platform.",
     image: "/nexa.png",
   },

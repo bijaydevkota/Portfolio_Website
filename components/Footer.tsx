@@ -40,7 +40,7 @@ const Footer = () => {
             <p>Full Stack Developer</p>
           </motion.div>
           <motion.div variants={itemVariants} className="mb-4 md:mb-0">
-            <p>Email: dbijay2058.com</p>
+            <p>Email: dbijay2058@gmail.com</p>
             <p>Phone: 9866338344</p>
           </motion.div>
           <motion.div variants={itemVariants} className="flex space-x-4">
@@ -48,7 +48,7 @@ const Footer = () => {
               href="https://github.com/bijaydevkota"
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.2, color: "#6e5494" }}
+              whileHover={{ scale: 1.2, color: "#1da1f2" }}
               whileTap={{ scale: 0.9 }}
             >
               <Github size={24} />
@@ -57,7 +57,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/bijay-devkota-43195227a/"
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.2, color: "#0077b5" }}
+              whileHover={{ scale: 1.2, color: "#1da1f2" }}
               whileTap={{ scale: 0.9 }}
             >
               <Linkedin size={24} />

@@ -5,8 +5,8 @@ import Header from '../components/Header'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Bijay_Portfolio',
-  description: 'A fully animated portfolio website built with Next.js and Framer Motion',
+  title: 'Bijay Devkota',
+  description: 'Hey, I&apos;m Bijay Devkota. Full Stack Software Developer',
 }
 
 export default function RootLayout({
