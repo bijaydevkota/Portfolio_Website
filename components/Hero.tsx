@@ -67,7 +67,7 @@ export default function HeroSection() {
             View Projects
           </a>
           <a
-            href="#contact"
+            href="#"
             className="px-6 py-3 text-lg font-semibold text-black bg-white rounded-lg hover:bg-gray-200"
           >
             Download CV
