@@ -21,11 +21,11 @@ const projects = [
     href: "https://nexaservices.vercel.app/",
   },
   {
-    title: "Calculator",
+    title: "Bims_Art",
     description:
-      "A real-time calculator made using Next.js, based on the theme of an Apple calculator.",
-    image: "/calculator.png",
-    href: "https://github.com/bijaydevkota/Calculator",
+      "An art website for the portfolio of my client where she can showcase her arts.",
+    image: "/bimsart.png",
+    href: "https://bims-art.vercel.app/",
   },
 ];
 
