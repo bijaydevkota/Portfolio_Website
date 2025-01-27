@@ -7,11 +7,11 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Online Voting System",
+    title: "Bims_Art",
     description:
-      "A full-stack online voting system built with Next.js, Node.js, and MongoDB.",
-    image: "/ovs.png",
-    href: "https://online-voting-system-sooty.vercel.app/home",
+      "An art website for the portfolio of my client where she can showcase her arts.",
+    image: "/bimsart.png",
+    href: "https://bims-art.vercel.app/",
   },
   {
     title: "Website For Nexa Services",
@@ -21,11 +21,11 @@ const projects = [
     href: "https://nexaservices.vercel.app/",
   },
   {
-    title: "Bims_Art",
+    title: "Online Voting System",
     description:
-      "An art website for the portfolio of my client where she can showcase her arts.",
-    image: "/bimsart.png",
-    href: "https://bims-art.vercel.app/",
+      "A full-stack online voting system built with Next.js, Node.js, and MongoDB.",
+    image: "/ovs.png",
+    href: "https://online-voting-system-sooty.vercel.app/home",
   },
 ];
 
@@ -63,7 +63,7 @@ const Projects = () => {
       className="py-20 bg-gradient-to-br from-gray-900 to-black text-blue-100"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center text-blue-400">
+        <h2 className="text-xl font-bold mb-8 text-center text-blue-900">
           My Projects
         </h2>
         <motion.div
