@@ -40,9 +40,9 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-blue-400">Bijay Devkota</h3>
             <p>Full Stack Developer</p>
           </motion.div>
-          <motion.div variants={itemVariants} className="mb-4 md:mb-0">
+          <motion.div variants={itemVariants} className="flex flex-col items-center mb-4 md:mb-0">
             <p>Email: dbijay2058@gmail.com</p>
-            <p>Phone: 9866338344</p>
+            <p>Contact No. : 9866338344</p>
           </motion.div>
           <motion.div variants={itemVariants} className="flex space-x-4">
             <motion.a
@@ -76,7 +76,7 @@ const Footer = () => {
         </motion.div>
         <motion.div 
           variants={itemVariants} 
-          className="mt-8 text-center"
+          className="mt-8 flex justify-center"
         >
           <p>&copy; Designed and Developed by <a href="#">Bijay Devkota</a></p>
 

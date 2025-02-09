@@ -41,7 +41,7 @@ const itemVariants = {
 
 export default function SkillsShowcase() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 to-black text-blue-900">
+    <div id="skills" className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 to-black text-blue-900">
        <h2 className="mt-10 text-xl font-semibold text-blue-900">
         My Skills
       </h2>

@@ -13,19 +13,20 @@ const projects = [
     image: "/bimsart.png",
     href: "https://bims-art.vercel.app/",
   },
+ 
+  {
+    title: "Instagram-Clone",
+    description:
+      "A fully cloned instagram web app which i made during my mernstack course at Zylux IT Solution",
+    image: "/insta.png",
+    href: "https://instagram-clone-psi-blush.vercel.app/",
+  },
   {
     title: "Website For Nexa Services",
     description:
       "A Next-based landing page for Nexa Services which is a digital marketing platform.",
     image: "/nexa.png",
     href: "https://nexaservices.vercel.app/",
-  },
-  {
-    title: "Online Voting System",
-    description:
-      "A full-stack online voting system built with Next.js, Node.js, and MongoDB.",
-    image: "/ovs.png",
-    href: "https://online-voting-system-sooty.vercel.app/home",
   },
 ];
 
