@@ -11,7 +11,11 @@ const skills = [
   { name: "Next", logo: "/next.jpeg" },
   { name: "MongoDB", logo: "/mongo.gif" },
   { name: "Postgresql", logo: "/postgre.png" },
-  { name: "Postgresql", logo: "/github.png" },
+  { name: "Github", logo: "/github.png" },
+  { name: "NodeJs", logo: "/nodejs.png" },
+  { name: "ExpressJs", logo: "/expressjs.png" },
+  { name: "Seo", logo: "/seo.png" },
+  
 ];
 
 const containerVariants = {

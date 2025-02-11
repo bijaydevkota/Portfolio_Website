@@ -19,7 +19,7 @@ const projects = [
     description:
       "A fully cloned instagram web app which i made during my mernstack course at Zylux IT Solution",
     image: "/insta.png",
-    href: "https://instagram-clone-psi-blush.vercel.app/",
+    href: "https://instagram-clone-zacg.vercel.app/",
   },
   {
     title: "Website For Nexa Services",
