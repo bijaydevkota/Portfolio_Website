@@ -78,7 +78,7 @@ const Footer = () => {
           variants={itemVariants} 
           className="mt-8 flex justify-center"
         >
-          <p>&copy; Designed and Developed by <a href="#">Bijay Devkota</a></p>
+          <p>&copy; Made by <a href="#">Bijay Devkota</a></p>
 
         </motion.div>
       </div>

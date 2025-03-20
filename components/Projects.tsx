@@ -15,11 +15,11 @@ const projects = [
   },
  
   {
-    title: "Instagram-Clone",
+    title: "Zylux IT Academy",
     description:
-      "A fully cloned instagram web app which i made during my mernstack course at Zylux IT Solution",
-    image: "/insta.png",
-    href: "https://instagram-clone-zacg.vercel.app/",
+      "An IT institute that teaches the javascript ecosystem (mern stack).",
+    image: "/zylux.png",
+    href: "https://zylux-it-academy.vercel.app/",
   },
   {
     title: "Website For Nexa Services",
