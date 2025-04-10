@@ -113,7 +113,7 @@ const HeroSection = () => {
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300"
               variants={itemVariants}
             >
-              Hello, I'm <span className="text-white">Bijay Devkota</span>
+              Hello, I&apos;m <span className="text-white">Bijay Devkota</span>
             </motion.h1>
 
             <motion.p
