@@ -66,7 +66,7 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen flex items-center py-10 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
-      <div className="container px-4 py-16 w-11/12 mx-auto">
+      <div className="container px-4 py-16 w-10/12 mx-auto">
         <motion.div
           className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12"
           initial="hidden"
