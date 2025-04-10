@@ -37,7 +37,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-black to-gray-900 text-blue-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center text-blue-400">Contact Me</h2>
+        <h2 className="text-2xl font-bold mb-8 text-center text-blue-400">Contact Me</h2>
         <motion.form
           ref={ref}
           initial="hidden"

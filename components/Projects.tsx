@@ -22,7 +22,7 @@ const projects = [
     href: "https://zylux-it-academy.vercel.app/",
   },
   {
-    title: "Website For Nexa Services",
+    title: "Nexa Services",
     description:
       "A Next-based landing page for Nexa Services which is a digital marketing platform.",
     image: "/nexa.png",
@@ -64,7 +64,7 @@ const Projects = () => {
       className="py-20 bg-gradient-to-br from-gray-900 to-black text-blue-100"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-xl font-bold mb-8 text-center text-blue-900">
+        <h2 className="text-2xl font-bold mb-8 text-center text-blue-400">
           My Projects
         </h2>
         <motion.div
@@ -107,6 +107,7 @@ const Projects = () => {
           ))}
         </motion.div>
       </div>
+      <Link href="https://github.com/bijaydevkota" target="_blank" className="p-4 md:py-4 w-6/12 bg-blue-400  text-white hover:bg-blue-500 mt-8 flex justify-center items-center md:w-2/12 mx-auto rounded-lg">See More Projects</Link>
     </section>
   );
 };

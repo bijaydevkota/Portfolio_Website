@@ -1,107 +1,187 @@
-"use client";
-import { useEffect } from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+"use client"
 
-export default function HeroSection() {
-  useEffect(() => {
-    const handleScroll = () => {
-      const bg = document.getElementById('background-image');
-      if (bg) {
-        const scrollValue = window.scrollY / 2;
-        bg.style.transform = `translateY(${scrollValue}px)`;
-      }
-    };
+import { motion } from "framer-motion"
+import Image from "next/image"
+import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
+import Link from "next/link"
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+const HeroSection = () => {
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
+      },
+    },
+  }
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  }
+
+  const imageVariants = {
+    hidden: { scale: 0.8, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: { duration: 0.7, ease: "easeOut" },
+    },
+  }
+
+  const socialVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 1.2,
+      },
+    },
+  }
+
+  const socialItemVariants = {
+    hidden: { y: 10, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.5 },
+    },
+  }
+
+  const glowVariants = {
+    initial: { backgroundPosition: "0% 50%" },
+    animate: {
+      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+      transition: { repeat: Number.POSITIVE_INFINITY, duration: 5, ease: "linear" },
+    },
+  }
 
   return (
-    <section id='home' className="relative w-full h-screen overflow-hidden">
-      {/* Background Image */}
-      <div
-        id="background-image"
-        className="absolute inset-0 w-full h-full z-0"
-        style={{ transition: 'transform 0.3s ease' }}
-      >
-        <Image
-          src="/final.webp" // Replace with your image path
-          alt="Background"
-          layout="fill"
-          objectFit="cover"
-          priority
-        />
-      </div>
-
-      {/* Animated Content */}
-      
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-        <motion.h1
-          className="text-6xl font-bold text-center sm:text-7xl lg:text-8xl"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: 'easeInOut' }}
-        >
-          Hey, I&apos;m Bijay Devkota
-        </motion.h1>
-        <motion.p
-          className="mt-6 text-lg text-center sm:text-xl lg:text-2xl max-w-2xl"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5, ease: 'easeInOut' }}
-        >
-          Full Stack Software Developer
-        </motion.p>
-
+    <section className="min-h-screen flex items-center py-10 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
+      <div className="container mx-auto px-4 py-16">
         <motion.div
-          className="flex mt-8 space-x-4"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1, ease: 'easeInOut' }}
+          className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12"
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
         >
-          <a
-            href="#projects"
-            className="px-6 py-3 text-lg font-semibold bg-blue-500 rounded-lg hover:bg-blue-600"
-          >
-            View Projects
-          </a>
-         
-        </motion.div>
+          {/* Left side - Image */}
+          <motion.div className="lg:w-5/12 relative" variants={imageVariants}>
+            <motion.div
+              className="absolute -inset-0.5 rounded-2xl blur-xl opacity-75 bg-gradient-to-r from-blue-600 via-cyan-400 to-blue-500"
+              variants={glowVariants}
+              initial="initial"
+              animate="animate"
+            ></motion.div>
+            <motion.div
+              className="relative bg-gray-900 rounded-2xl p-2 shadow-2xl"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Image
+                src="/hero1.jpg"
+                width={500}
+                height={600}
+                alt="Portfolio Image"
+                className="rounded-xl w-full h-auto"
+                priority
+              />
+            </motion.div>
+          </motion.div>
 
-        {/* Floating Images */}
-        <motion.div
-          className="absolute top-10 right-10 w-24 h-24 mt-16 md:w-32 md:h-32 rounded-full overflow-hidden"
-          initial={{ scale: 0, rotate: 0 }}
-          animate={{ scale: 1, rotate: 360 }}
-          transition={{ duration: 2, ease: 'easeInOut' }}
-        >
-          <Image
-            src="/bj1.jpg" 
-            alt="Floating Decor"
-            layout="responsive"
-            width={128}
-            height={128}
-             className='rounded-full'
-          />
-        </motion.div>
+          {/* Right side - Content */}
+          <motion.div className="lg:w-7/12 text-center lg:text-left" variants={itemVariants}>
+            <motion.div variants={itemVariants}>
+              <motion.span
+                className="inline-block px-4 py-1.5 mb-4 text-sm font-medium rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+              >
+                Full Stack Developer
+              </motion.span>
+            </motion.div>
 
-        <motion.div
-          className="absolute bottom-10 left-10 w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden"
-          initial={{ scale: 0, rotate: 0 }}
-          animate={{ scale: 1, rotate: -360 }}
-          transition={{ duration: 2, delay: 0.5, ease: 'easeInOut' }}
-        >
-          <Image
-            src="/bj.jpg" 
-            alt="Floating Decor"
-            layout="responsive"
-            width={128}
-            height={128}
-            className='rounded-full'
-          />
+            <motion.h1
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300"
+              variants={itemVariants}
+            >
+              Hello, I'm <span className="text-white">Bijay Devkota</span>
+            </motion.h1>
+
+            <motion.p
+              className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0"
+              variants={itemVariants}
+            >
+              I build exceptional and accessible digital experiences for the web. Focused on creating responsive,
+              user-friendly applications with modern technologies.
+            </motion.p>
+
+            <motion.div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8" variants={itemVariants}>
+              <Link href="#projects">
+              <motion.button
+                className="px-6 py-3 bg-blue-400 hover:bg-blue-500 text-white rounded-lg font-medium flex items-center gap-2 transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                View Projects <ArrowRight size={18} />
+              </motion.button>
+              </Link>
+
+              <motion.button
+                className="px-6 py-3 bg-transparent hover:bg-blue-500/10 text-blue-400 border border-blue-500/30 rounded-lg font-medium transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Download CV
+              </motion.button>
+            </motion.div>
+
+            {/* Social Icons */}
+            <motion.div className="flex gap-5 justify-center lg:justify-start" variants={socialVariants}>
+              <motion.a
+                href="https://github.com/bijaydevkota"
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-gray-300 hover:text-white transition-colors"
+                variants={socialItemVariants}
+                whileHover={{ y: -5, scale: 1.1 }}
+              >
+                <Github size={20} />
+              </motion.a>
+
+              <motion.a
+                href="https://www.linkedin.com/in/bijay-devkota-43195227a/"
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-gray-300 hover:text-white transition-colors"
+                variants={socialItemVariants}
+                whileHover={{ y: -5, scale: 1.1 }}
+              >
+                <Linkedin size={20} />
+              </motion.a>
+
+              <motion.a
+                href="mailto:dbijay2058@gmail.com"
+                className="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-gray-300 hover:text-white transition-colors"
+                variants={socialItemVariants}
+                whileHover={{ y: -5, scale: 1.1 }}
+              >
+                <Mail size={20} />
+              </motion.a>
+            </motion.div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
-  );
+  )
 }
+
+export default HeroSection
