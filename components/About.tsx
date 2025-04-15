@@ -42,7 +42,7 @@ const About = () => {
               animate={inView ? "visible" : "hidden"}
               variants={variants}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="lg:w-3/5 bg-gray-800 bg-opacity-50 p-6 rounded-lg shadow-lg backdrop-blur-sm"
+              className="lg:w-3/5 w-full bg-gray-800 bg-opacity-50 p-6 rounded-lg shadow-lg backdrop-blur-sm"
             >
               <p className="text-base mb-4">
                 I&apos;m a passionate Full Stack Developer with experience in building responsive and user-friendly web
@@ -67,49 +67,58 @@ const About = () => {
               </p>
             </motion.div>
 
-            {/* Image Section */}
+            {/* Image Grid Section - Same layout for mobile and desktop */}
             <motion.div
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
               variants={variants}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="lg:w-2/5 w-full flex lg:block relative lg:h-[500px]"
+              className="lg:w-2/5 w-full relative"
+              style={{ height: "350px" }} // Fixed height for mobile and adjusted for desktop with media queries
             >
-              {/* Show only this image on mobile */}
+              {/* First Image - Top Left */}
               <motion.div
                 variants={imageVariants}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="w-full h-60 lg:hidden rounded-lg overflow-hidden shadow-xl"
+                className="absolute left-0 top-0 w-[45%] h-[65%] rounded-lg overflow-hidden shadow-xl"
               >
-                <Image src="/photo3.jpg" alt="Profile picture 3" fill className="object-cover" />
+                <Image
+                  src="/photo1.jpg"
+                  alt="Profile picture 1"
+                  fill
+                  sizes="(max-width: 768px) 45vw, (min-width: 1024px) 22vw"
+                  className="object-cover"
+                />
               </motion.div>
 
-              {/* Desktop layout (all 3 images) */}
-              {/* First Image */}
-              <motion.div
-                variants={imageVariants}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="hidden lg:block absolute left-0 top-0 w-[45%] h-[65%] rounded-lg overflow-hidden shadow-xl"
-              >
-                <Image src="/photo1.jpg" alt="Profile picture 1" fill className="object-cover" />
-              </motion.div>
-
-              {/* Second Image */}
+              {/* Second Image - Top Right */}
               <motion.div
                 variants={imageVariants}
                 transition={{ duration: 0.6, delay: 0.7 }}
-                className="hidden lg:block absolute right-0 top-[15%] w-[45%] h-[65%] rounded-lg overflow-hidden shadow-xl"
+                className="absolute right-0 top-[7%] w-[45%] h-[65%] rounded-lg overflow-hidden shadow-xl"
               >
-                <Image src="/photo5.jpg" alt="Profile picture 2" fill className="object-cover" />
+                <Image
+                  src="/photo5.jpg"
+                  alt="Profile picture 2"
+                  fill
+                  sizes="(max-width: 768px) 45vw, (min-width: 1024px) 22vw"
+                  className="object-cover"
+                />
               </motion.div>
 
-              {/* Third Image (desktop position) */}
+              {/* Third Image - Bottom Center */}
               <motion.div
                 variants={imageVariants}
                 transition={{ duration: 0.6, delay: 0.9 }}
-                className="hidden lg:block absolute left-[10%] bottom-0 w-[80%] h-[30%] rounded-lg overflow-hidden shadow-xl"
+                className="absolute left-[10%] bottom-0 w-[80%] h-[50%] rounded-lg overflow-hidden shadow-xl"
               >
-                <Image src="/photo3.jpg" alt="Profile picture 3" fill className="object-cover" />
+                <Image
+                  src="/photo3.jpg"
+                  alt="Profile picture 3"
+                  fill
+                  sizes="(max-width: 768px) 80vw, (min-width: 1024px) 40vw"
+                  className="object-cover"
+                />
               </motion.div>
             </motion.div>
           </div>
