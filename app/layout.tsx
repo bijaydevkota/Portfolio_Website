@@ -1,18 +1,52 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import Header from '../components/Header'
+import './globals.css';
+import { Inter } from 'next/font/google';
+import Header from '../components/Header';
+import type { Metadata } from 'next';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'Bijay Devkota',
-  description: 'Hey, I&apos;m Bijay Devkota. Full Stack Software Developer',
-}
+// 🔥 Updated metadata for SEO and social sharing
+export const metadata: Metadata = {
+  title: 'Bijay Devkota | Software Developer',
+  description: "Hey, I'm Bijay Devkota. Software Developer From Nepal",
+  keywords: ['Bijay Devkota', 'bijaydevkota', 'devkotabijay', 'Devkota Bijay', 'MERN Developer', 'Portfolio' , 'Software Developer', 'IT'],
+  authors: [{ name: 'Bijay Devkota', url: 'https://devkotabijay.com.np' }],
+  creator: 'Bijay Devkota',
+  metadataBase: new URL('https://devkotabijay.com.np'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Bijay Devkota |  Software Developer',
+    description: "Explore the work and projects of Bijay Devkota, software developer.",
+    url: 'https://devkotabijay.com.np',
+    siteName: 'Bijay Devkota Portfolio',
+    type: 'website',
+    locale: 'en_US',
+    // Optional image:
+    // images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bijay Devkota | Software Developer',
+    description: "Explore the work and projects of Bijay Devkota, software developer.",
+    // Optional image:
+    // images: ['/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -21,6 +55,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }
-
