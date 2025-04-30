@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ['latin'] });
 // 🔥 Updated metadata for SEO and social sharing
 export const metadata: Metadata = {
   title: 'Bijay Devkota | Software Developer',
-  description: "Hey, I'm Bijay Devkota. Software Developer From Nepal",
-  keywords: ['Bijay Devkota', 'bijaydevkota', 'devkotabijay', 'Devkota Bijay', 'MERN Developer', 'Portfolio' , 'Software Developer', 'IT'],
+  description: "Hey, I'm Bijay Devkota. Passionate Software Developer From Nepal",
+  keywords: ['Bijay Devkota', 'bijaydevkota', 'devkotabijay', 'Devkota Bijay', 'Mernstack Developer', 'Fullstack Developer', 'Portfolio' , 'Software Developer', 'IT'],
   authors: [{ name: 'Bijay Devkota', url: 'https://devkotabijay.com.np' }],
   creator: 'Bijay Devkota',
   metadataBase: new URL('https://devkotabijay.com.np'),
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Bijay Devkota |  Software Developer',
-    description: "Explore the work and projects of Bijay Devkota, software developer.",
+    description: "Hey, I'm Bijay Devkota.Passioanate Software Developer From Nepal",
     url: 'https://devkotabijay.com.np',
-    siteName: 'Bijay Devkota Portfolio',
+    siteName: 'Bijay Devkota',
     type: 'website',
     locale: 'en_US',
     // Optional image:
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Bijay Devkota | Software Developer',
-    description: "Explore the work and projects of Bijay Devkota, software developer.",
+    description: "Hey, I'm Bijay Devkota.Passioanate Software Developer From Nepal",
     // Optional image:
     // images: ['/og-image.jpg'],
   },
