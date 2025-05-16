@@ -39,7 +39,7 @@ export function Skills() {
   );
 
   return (
-    <div className="relative flex  flex-col py-20 size-full items-center justify-center overflow-hidden">
+    <div id="skills" className="relative flex  flex-col py-20 size-full items-center justify-center overflow-hidden">
       <h1 className="text-2xl font-semibold text-blue-400">My Skills</h1>
       <IconCloud images={images} />
     </div>

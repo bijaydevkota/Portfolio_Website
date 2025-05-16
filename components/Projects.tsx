@@ -7,11 +7,11 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Bims_Art",
+    title: "Refresh Recreation Center",
     description:
-      "An art website for the portfolio of my client where she can showcase her arts.",
-    image: "/bimsart.png",
-    href: "https://bims-art.vercel.app/",
+      "A healthclub with indoor swimming pool, Gym, Sauna & steam and Jacuzzi",
+    image: "/refresh.png",
+    href: "https://refreshcenter.vercel.app/",
   },
  
   {
@@ -22,11 +22,11 @@ const projects = [
     href: "https://zylux-it-academy.vercel.app/",
   },
   {
-    title: "Nexa Services",
+    title: "Care and Development Organization",
     description:
-      "A Next-based landing page for Nexa Services which is a digital marketing platform.",
-    image: "/nexa.png",
-    href: "https://nexaservices.vercel.app/",
+      "A Next-based landing page for care and development organization which is a NGO.",
+    image: "/cdo.png",
+    href: "https://cdo-demo.vercel.app/",
   },
 ];
 
