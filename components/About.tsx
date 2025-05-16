@@ -45,8 +45,8 @@ const About = () => {
               className="lg:w-3/5 w-full bg-gray-800 bg-opacity-50 p-6 rounded-lg shadow-lg backdrop-blur-sm"
             >
               <p className="text-base mb-4">
-                I&apos;m a passionate Full Stack Developer with experience in building responsive and user-friendly web
-                applications. I&apos;m working as a Full Stack Developer at{" "}
+                I&apos;m a passionate Software Developer with experience in building responsive and user-friendly web
+                applications. I&apos;m working as a Software Developer at{" "}
                 <a
                   href="https://www.zyluxitsolution.com/"
                   target="_blank"

@@ -9,7 +9,7 @@ const projects = [
   {
     title: "Refresh Recreation Center",
     description:
-      "A healthclub with indoor swimming pool, Gym, Sauna & steam and Jacuzzi",
+      "A dummy website for healthclub with indoor swimming pool, Gym, Sauna & steam and Jacuzzi",
     image: "/refresh.png",
     href: "https://refreshcenter.vercel.app/",
   },
@@ -24,7 +24,7 @@ const projects = [
   {
     title: "Care and Development Organization",
     description:
-      "A Next-based landing page for care and development organization which is a NGO.",
+      "A dummy landing page for care and development organization which is a NGO.",
     image: "/cdo.png",
     href: "https://cdo-demo.vercel.app/",
   },

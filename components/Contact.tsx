@@ -19,6 +19,7 @@ const Contact = () => {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   })
 
@@ -40,6 +41,7 @@ const Contact = () => {
     setFormState({
       name: "",
       email: "",
+      phone: "",
       message: "",
     })
   }
@@ -132,21 +134,7 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="max-w-lg mx-auto bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg backdrop-blur-sm"
         >
-          {/* Status Messages */}
-          {status.message && (
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className={`mb-4 p-3 rounded-md ${status.success ? "bg-green-800 bg-opacity-50" : "bg-red-800 bg-opacity-50"} flex items-center`}
-            >
-              {status.success ? (
-                <CheckCircle className="mr-2 h-5 w-5 text-green-400" />
-              ) : (
-                <AlertCircle className="mr-2 h-5 w-5 text-red-400" />
-              )}
-              <span>{status.message}</span>
-            </motion.div>
-          )}
+          
 
           <motion.div className="mb-4" variants={formVariants}>
             <label htmlFor="name" className="block text-sm font-medium mb-2 text-blue-300">
@@ -178,6 +166,21 @@ const Contact = () => {
               disabled={status.loading}
             />
           </motion.div>
+           <motion.div className="mb-4" variants={formVariants}>
+            <label htmlFor="email" className="block text-sm font-medium mb-2 text-blue-300">
+              Phone
+            </label>
+            <input
+              type="number"
+              id="phone"
+              name="phone"
+              value={formState.phone}
+              onChange={handleChange}
+              className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-blue-100"
+              required
+              disabled={status.loading}
+            />
+          </motion.div>
           <motion.div className="mb-4" variants={formVariants}>
             <label htmlFor="message" className="block text-sm font-medium mb-2 text-blue-300">
               Message
@@ -193,6 +196,23 @@ const Contact = () => {
               disabled={status.loading}
             ></textarea>
           </motion.div>
+
+          {/* Status Messages */}
+          {status.message && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className={`mb-4 p-3 rounded-md ${status.success ? "bg-green-800 bg-opacity-50" : "bg-red-800 bg-opacity-50"} flex items-center`}
+            >
+              {status.success ? (
+                <CheckCircle className="mr-2 h-5 w-5 text-green-400" />
+              ) : (
+                <AlertCircle className="mr-2 h-5 w-5 text-red-400" />
+              )}
+              <span>{status.message}</span>
+            </motion.div>
+          )}
+          
           <motion.button
             type="submit"
             className="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300 flex items-center justify-center"
